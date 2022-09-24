@@ -6,9 +6,9 @@
 #
 # GNU Radio Python Flow Graph
 # Title: Not titled yet
-# GNU Radio version: 3.9.4.0
+# GNU Radio version: 3.10.2.0
 
-from distutils.version import StrictVersion
+from packaging.version import Version as StrictVersion
 
 if __name__ == '__main__':
     import ctypes
@@ -223,7 +223,6 @@ class FM_test(gr.top_block, Qt.QWidget):
         	audio_decimation=10,
         )
         self.analog_sig_source_x_0_0 = analog.sig_source_c(samp_rate, analog.GR_COS_WAVE, variable_qtgui_range_0, 1, 0, 0)
-
 
 
         ##################################################
